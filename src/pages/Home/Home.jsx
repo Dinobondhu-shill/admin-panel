@@ -39,7 +39,6 @@ export default function Dashboard() {
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="analytics">Analytics</TabsTrigger>
           <TabsTrigger value="reports">Reports</TabsTrigger>
-          <TabsTrigger value="notifications">Notifications</TabsTrigger>
         </TabsList>
 
         <TabsContent value="overview">
@@ -54,9 +53,6 @@ export default function Dashboard() {
           <ReportsTab />
         </TabsContent>
 
-        <TabsContent value="notifications">
-          <NotificationsTab />
-        </TabsContent>
       </Tabs>
     </div>
   )

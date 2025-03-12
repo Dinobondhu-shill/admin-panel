@@ -34,116 +34,184 @@ const data = {
   },
   navMain: [
     {
-      title: "Playground",
+      title: "Summery Card",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Total Sale",
+          url: "/summery-card/total-sale",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Total Order",
+          url: "/summery-card/total-order",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Total User",
+          url: "/summery-card/total-user",
+        },
+        {
+          title: "Total Product",
+          url: "/summery-card/total-product",
+        },
+        {
+          title: "Monthly Revenue",
+          url: "/summery-card/monthly-revenues",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Product Management",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "Add Products",
+          url: "/add-product",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "View All Products",
+          url: "/view-products",
         },
         {
-          title: "Quantum",
-          url: "#",
+          title: "Top Products",
+          url: "/top-products",
+        },
+        {
+          title: "Stock Management ",
+          url: "/stocks-management",
+        },
+        {
+          title: "Category Management ",
+          url: "/category-management",
         },
       ],
     },
     {
-      title: "Documentation",
+      title: "Order Managements",
       url: "#",
       icon: BookOpen,
       items: [
         {
-          title: "Introduction",
-          url: "#",
+          title: "Order List",
+          url: "/order-list",
         },
         {
-          title: "Get Started",
-          url: "#",
+          title: "Recent Orders",
+          url: "/recent-order",
         },
         {
-          title: "Tutorials",
-          url: "#",
+          title: "Add Order",
+          url: "/add-order",
         },
         {
-          title: "Changelog",
-          url: "#",
+          title: "Customer Activity Tracking",
+          url: "/activity-tracking",
         },
       ],
     },
     {
-      title: "Settings",
+      title: "User Management",
       url: "#",
       icon: Settings2,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "View All Users",
+          url: "/all-user",
         },
         {
-          title: "Team",
-          url: "#",
+          title: "Refund Management",
+          url: "/refund-management",
         },
         {
-          title: "Billing",
+          title: "Payment Method Statistics",
           url: "#",
+        },
+    
+      ],
+    },
+    {
+      title: "Coupon & Discount Management",
+      url: "#",
+      icon: Settings2,
+      items: [
+        {
+          title: "Create New Coupons",
+          url: "/all-transactions",
         },
         {
-          title: "Limits",
+          title: "Refund Management",
+          url: "/refund-management",
+        },
+        {
+          title: "Payment Method Statistics",
           url: "#",
         },
+    
+      ],
+    },
+    {
+      title: "Shipping & Delivery Management",
+      url: "#",
+      icon: Settings2,
+      items: [
+        {
+          title: "Shipping Methods Configuration ",
+          url: "/all-transactions",
+        },
+        {
+          title: "Track Shipments",
+          url: "/refund-management",
+        },
+        {
+          title: "Delivery Status Updates",
+          url: "#",
+        },
+    
       ],
     },
   ],
   navSecondary: [
-    {
-      title: "Support",
-      url: "#",
-      icon: LifeBuoy,
-    },
     {
       title: "Feedback",
       url: "#",
       icon: Send,
     },
   ],
-  projects: [
+  vendors: [
     {
-      name: "Design Engineering",
-      url: "#",
+      name: "Vendor Dashboard Overview",
+      url: "/vendor-management",
       icon: Frame,
     },
     {
-      name: "Sales & Marketing",
+      name: "Vendor Registration & Approval",
       url: "#",
       icon: PieChart,
     },
     {
-      name: "Travel",
+      name: "Vendor Management Panel",
+      url: "#",
+      icon: Map,
+    },
+    {
+      name: "Order & Fulfillment Tracking",
+      url: "#",
+      icon: Map,
+    },
+    {
+      name: "Commission & Payout System",
+      url: "#",
+      icon: Map,
+    },
+    {
+      name: "Vendor Analytics & Performance Monitoring",
+      url: "#",
+      icon: Map,
+    },
+    {
+      name: "Dispute & Policy Management",
       url: "#",
       icon: Map,
     },
@@ -177,7 +245,7 @@ export function AppSidebar({
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavProjects projects={data.vendors} />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
