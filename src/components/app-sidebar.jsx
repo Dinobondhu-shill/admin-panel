@@ -35,29 +35,29 @@ const data = {
   navMain: [
     {
       title: "Summery Card",
-      url: "#",
+      url: "/summery",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
           title: "Total Sale",
-          url: "/summery-card/total-sale",
+          url: "/summery/total-sale",
         },
         {
           title: "Total Order",
-          url: "/summery-card/total-order",
+          url: "/summery/total-orders",
         },
         {
           title: "Total User",
-          url: "/summery-card/total-user",
+          url: "/summery/total-user",
         },
         {
           title: "Total Product",
-          url: "/summery-card/total-product",
+          url: "/summery/total-product",
         },
         {
           title: "Monthly Revenue",
-          url: "/summery-card/monthly-revenues",
+          url: "/summery/monthly-revenues",
         },
       ],
     },
